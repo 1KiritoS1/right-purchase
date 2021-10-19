@@ -11,13 +11,16 @@
 	<!-- Raleway SemiBold -->
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 	<!-- Raleway Bold -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+	<!-- Montserrat SemiBold-->
 
 </head>
 <body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="assets/js/scrollup.js"></script>
-
 
 <div class="scrollup js-scrollup">
 	<i class="fa fa-chevron-up"></i>
@@ -30,10 +33,9 @@
 			<div class="header__logo">Right Purchase</div>
 
 				<nav class="nav">
-					<a class="nav__link" href="#">Home</a>
-					<a class="nav__link" href="#">About</a>
-					<a class="nav__link" href="#">Guides</a>
-					<a class="nav__link" href="#">Contact</a>
+					<a class="nav__link" href="#about">About</a>
+					<a class="nav__link" href="#guide">Guide</a>
+					<a class="nav__link" href="#bottom">Contact</a>
 				</nav>
 
 		</div>		
@@ -50,15 +52,15 @@
 	<div class="container">
 		<div class="section__header">
 			<div class="section-title__box">
-				<h2 class="section__title">О сайте</h2>
+				<h2 class="section__title" id="about" >О сайте</h2>
 			</div>
 
 				<div class="section__text">
 				
 					<p><a class="redness">Добро пожаловать на Right Purchase!</a><br>
 					По названию понятно, что на этом сайте идет речь о .. "правильных покупках"?
-					Не совсем, хоть от части и правда.Сайт создан для того, чтобы расказать и <br> дать инструкции по гайдам на героев Dota 2 — компьютерная многопользовательская командная игра в  жанре MOBA, разработанная корпорацией <a href="https://ru.wikipedia.org/wiki/Valve" target="blank">Valve</a>...<br>
-					Думаю все знают или слышали о ней, а если нет самое время познакомиться! Рассказывать о геймплее и о том что это такое я останавливаться не буду. Подробнее мы поговорим о сборках на героев.
+					Не совсем, хоть от части и правда.Сайт создан для того, чтобы рассказать и <br> дать инструкции по гайдам на героев Dota 2 — компьютерная многопользовательская командная игра в  жанре MOBA, разработанная корпорацией <a href="https://ru.wikipedia.org/wiki/Valve" target="blank">Valve</a>...<br>
+					Думаю все знают или слышали о ней, а если нет самое время познакомиться! Рассказывать о геймплее и о том что это такое я не буду. Подробнее мы поговорим о сборках на героев.
 					Какие предметы нужно покупать, в каких ситуациях и обо всем читайте ниже.</p>
 
 					<div class="content">
@@ -67,13 +69,11 @@
 								<ol>
 
 									<li class="content__item">
-										<a class="content__link" href=# data-target="#SF">Гайд на Shadow Fiend</a>		
+										<a class="content__link" href="#guide" data-target="#SF">Гайд на Shadow Fiend</a>		
 									</li>	
+
 									<li class="content__item">
-										<a class="content__link" href="#" data-target="#MK">Гайд на Monkey King</a>
-									</li>
-									<li class="content__item">
-										<a class="content__link" href="#" data-target="#Links">Полезные ссылки</a>
+										<a class="content__link" href="#bottom" data-target="#Links">Полезные ссылки</a>
 									</li>
 
 								</ol>
@@ -91,12 +91,12 @@
 
 <section class="build_sf__header"> <!--   build__sf   -->
 	<div class="build_sf-title__box">
-		<h2 class="build_sf__title">Гайд на Shadow Fiend</h2>
+		<h2 class="build_sf__title" id="guide">Гайд на Shadow Fiend</h2>
 	</div>
 
 		<div class="build_sf__guide"> 
 			<div class="build_sf__icon">
-				<img src="images/content/sf_portrait.jpg" alt="Shadow Fiend">
+				<img src="images/content/sf/sf_portrait.jpg" alt="Shadow Fiend">
 			</div>
 				<div class="build_sf__table">
 					<h3 class="build_sf_subtitle-text">Подробности</h3>
@@ -109,7 +109,7 @@
 							<a href="#" class="li-mark-global">2. Контрпики</a>
 						</li>
 						<li>
-							<a href="#" class="li-mark-global">3. Скилл билд</a>
+							<a href="#" class="li-mark-global">3. Способности</a>
 						</li>
 						<li>
 							<a href="#" class="li-mark-global">4. Айтем билд</a>
@@ -130,22 +130,271 @@
 		</div>
 		<div class="build_sf__text">
 			<p>Shadow Fiend, Nevermore, у него много имён - один из самых мощных керри в игре, быстро фармит за счёт
-			койлов и определённых талантов на мс и койлы. Его пассивка отлично подходит для пуша(с талантом), а ульт даёт "страх" который полезен как для атаки, так и для отступления и имеет хороший АОЕ урон. Также, хорош в лейт гейме. Но, и недостатков у него много: мало здоровья, брони и самый низкий урон с руки(в начале игры). Поэтому герой требует ни одного десятка а то и сотни игр, чтобы понимать его силу и потенциал. На 1 уровне имеет: 305 мса, 1 броню и 19-25 урона с руки.</p>
+			койлов и определённых талантов на мс и койлы. Его пассивка отлично подходит для пуша(с талантом), а ульт даёт "страх" который полезен как для атаки, так и для отступления и имеет хороший АоЕ урон. Также, хорош в лейт гейме. Но и недостатков у него много: мало здоровья, брони и самый низкий урон с руки(в начале игры). Поэтому, герой требует ни одного десятка а то и сотни игр, чтобы понимать его силу и потенциал. На 1 уровне имеет: 305 мса, 1 броню и 19-25 урона с руки.</p>
 		</div>
 		<div class="build_sf__main-box">
 			<h3>Контрпики</h3>
 		</div>
 		<div class="build_sf__text">
-			<p></p>
+			<p class="font-size">Поскольку герой очень тонкий, его контрят множество персонажей: </p>
+		</div>
+		<div class="build_sf__container-box">
+			<div class="build_sf__container">
+				<img src="images/content/kunkka.png" alt="kunkka">
+				<p>Kunkka - герой, который может доставить немало проблем, и легко убить на 6 уровне, харош в плане ластхита и здоровья,<br> может убить и до 6 уровня, постепенно изводя противника атаками от Tidebringer.</p>		
+			</div> <!-- kunkka -->
+
+			<div class="build_sf__container">
+				<img src="images/content/beastmaster.png" alt="beastmaster">
+				<p>Beastmaster - своим ультом может испортить всю малину, его кабаны дают большое замедление
+				и также они полезны для<br> контроля и разбития рун. В битве 1 х 1 у вас практически нет шансов.</p>
+			</div> <!-- beastmaster -->
+
+			<div class="build_sf__container">
+				<img src="images/content/doom.png" alt="doom">	
+				<p>Doom - его 3 скилл очень болезненный, поскольку бьёт в процентном соотношении, особенно для SF'а
+				с его запасом здоровья, но<br> главная причина почему он контрит SF'а это его ульт, во время которого вы
+				становитесь грушей для битья.</p>		
+			</div> <!-- doom -->
+
+			<div class="build_sf__container">
+				<img src="images/content/huskar.png" alt="huskar" width="205" height="115px">	
+				<p>Huskar - очень неприятный герой во всех стадиях игры. Его сложно убить, особенно если игрок на нём
+				опытен, и не подставляется<br> под койлы. Высокий хп реген и большой урон от огненных копей.</p>	
+			</div> <!-- sven -->
+
+			<div class="build_sf__container">
+				<img src="images/content/stalker.png" alt="stalker">
+				<p>Night Stalker - силен в начальной стадии, ночью на линии лучше не показываться, во время
+				Crippling Fear вы не сможете нажать<br> ульт, чтобы убежать. Способность Void сбивает тп и замедляет противника, поэтому просто так от него не уйдешь. </p>		
+			</div> <!-- night stalker -->
+		</div>	
+
+		<div class="build_sf__main-box">
+			<h3>Способности</h3>
+		</div>
+		<div class="build_sf__text">
+			<p class="font-size">Тактика такова: идем на мид,фармим души, накапливаем урон и уровень - убиваем соло целей. Краткое описание скиллов: </p>
+		</div>
+		<div class="build_sf__container-box">
+			<div class="build_sf__abilities">
+				<div class="build_sf__abilities-photo">
+					<img src="images/content/sf/shadowraze_one.png"><img src="images/content/sf/shadowraze_two.png">
+					<img src="images/content/sf/shadowraze_three.png">
+				</div>
+				<p>Shadowraze - все три способности Shadowraze связаны и имеют один и тот же уровень. Прокачиваем
+				его на 1 уровне, без вариантов. Добиваем койлом<br> дальника и получаем 2 уровень с 1 пачки. Также,
+				набивая стаки на противнике можно сделать фб на 1 уровне, но для этого нужно чувствовать героя и знать<br> хватит вам урона для убийства, иначе потеряете все ресурсы впустую. Полезный совет для новичков: очень часто бывают случаи когда койл нужно дать с точки<br> где герой(по умолчанию) будет разворачиваться в другом направлении, или дать койл с горы или края. В этом вам поможет directional move, с помощью этой опции герой не оббегает препятствия и идет в заданом направлении до конца. Его можно настроить на любую удобную для вас кнопку в настройках.<br> Управление - Расширеные настройки - Движение в направлении. ( Hotkeys - To advanced hotkeys - Direction move )
+				</p>
+			</div>
+
+			<div class="build_sf__abilities">
+				<div class="build_sf__abilities-photo">
+					<img src="images/content/sf/necromastery.jpg">
+				</div>
+				<p>Necromastery - "некое подобие ада, но здесь им приходится отдавать свои силы для демона до тех пор, пока кто-то не осмелится освободить их." Качаем на 2<br> уровне и спокойно фармим крипов на линии, чем больше душ, тем больше урона с руки вы получаете (1/2/3/4 ( <img src="images/content/talent.png" class="img">4/5/6/7) ). Для физического билда желательно покупать Aghanim Shard, следующая атака наносит 190% критического урона. Перезарядка 3 секунды. Иллюзии от Manta Style <img src="images/content/manta.png" class="img"> изначально будут иметь 0 душ.</p>
+			</div>
+
+			<div class="build_sf__abilities">
+				<div class="build_sf__abilities-photo">
+					<img src="images/content/sf/presence.png">
+				</div>	
+				<p>Presence of the Dark Lord - "Невермору необязательно участвовать в бою, чтобы причинять вред. Одно лишь его присутствие заставляет противников<br> чувствовать слабость." Снижение брони противникам 4/5/6/7 ( <img src="images/content/talent.png" class="img"> 8/9/10/11). С талантом действует на постройки, пассивку видно даже если вы не видны противнику.</p>
+			</div>
+
+			<div class="build_sf__abilities">
+			<div class="build_sf__abilities-photo">
+				<img src="images/content/sf/requiem_of_souls.png">
+			</div>
+				<p>Requiem of Souls - "иногда демон сам отпускает души на волю, но только для того, чтобы они сеяли смерть и страх. За свою свободу, они должны заплатить<br> душами других невинных." Замедляет передвижение врагов и накладывает на них страх, поэтому качают ульту по ситуации, в большинстве случаев её берут<br> на 9 уровне, но если вам нужно спастить и без ульты не обойтись, то качаем её.
+				</p>
+			</div>
 		</div>
 
+		<div class="build_sf__main-box">
+			<h3>Что качать?</h3>
+		</div>
+		<div class="build_sf__text"> 
+			<h4 class="font-size">Наш скилл билд будет выглядить примерно вот так: </h4>
+		</div>
+		<div>
+			<img src="images/content/sf/skill_build_sf.png" alt="Skill Build" class="img_skill_build_sf">
+		</div>
+		<div class="build_sf__text"> 
+			<h4 class="font-size">Выбор талантов делится на два пути: Физический и Магический SF </h4>
+		</div>
+		<br>
+		<div>
+			<h3>Для Магического: </h3>
+			<img src="images/content/sf/talent_magic.png">
+			<ul class="ul_talent_sf">
+				<li>
+					<a>+8% урон от заклинаний</a>
+				</li>
+				<li>
+					<a>+100 урона от Shadowraze</a>
+				</li>
+				<li>
+					<a>+0,4 сек. страха/замедления за волну Ruquiem of Souls</a>
+				</li>
+				<li>
+					<a>-50 сек. перезарядки Requiem of Souls</a>
+				</li>
+			</ul>
+			<h3>Для Физического: </h3>
+			<img src="images/content/sf/talent_physical.png">
+			<ul class="ul_talent_sf">
+				<li>
+					<a>+25 скорости атаки</a>
+				</li>
+				<li>
+					<a>Аура Presence of the Dark Lord действует на строения</a>
+				</li>
+				<li>
+					<a>+3 урона за душу</a>
+				</li>
+				<li>
+					<a>-4 снижению брони от Presence of the Dark Lord</a>
+				</li>
+			</ul>
+		</div>
 
+		<div class="build_sf__main-box">
+			<h3>Айтем билд</h3>
+		</div>	
+		<div class="build_sf__text">
+			<p>Начальный закуп может быть на выход в ранний ботл или же не такой ранний, а более агрессивный: </p>
+		</div>	
+		<div class="build_sf_items">
+			<img src="images/content/items/tango.jpg"> <img src="images/content/items/faerie_fire.jpg"> <img src="images/content/items/iron_branch.jpg"> <img src="images/content/items/mango.jpg"> <img src="images/content/items/mango.jpg"> <img src="images/content/items/mango.jpg"><p> - Агрессивный закуп </p>
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/faerie_fire.jpg"> <img src="images/content/items/iron_branch.jpg"> <img src="images/content/items/iron_branch.jpg"> <img src="images/content/items/mango.jpg"><p> - Ранний ботл </p>
+		</div>
+		<div class="build_sf__text">
+			<p>В не зависимости какой закуп из вышеперечисленных взяли, берём следущее: </p>
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/bottle.jpg"> <img src="images/content/items/boots.jpg"><p>и если нужно </p> <img src="images/content/items/magic_wand.jpg">
+		</div>
+		<div class="build_sf_items">
+			<p>Начальные предметы для хилла</p>  <img src="images/content/items/tango.jpg"> <img src="images/content/items/healing_salve.jpg"> <img src="images/content/items/clarity.jpg">
+		</div>
+		<div class="build_sf__text">
+			<p>Далее, мы апгрейдим наш ботинок: </p>
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/power_treads.jpg"><p style="margin-right: 10px;">или</p><img src="images/content/items/boots_of_travel.jpg"> 
+		</div>
+		<div class="build_sf__text">
+			<p>Если идем в физического SFа, то Power Treads, если хорошо отстояли линию берем травела и наводим шуматоху на карте и сноуболлимся.<br>Далее перечислены айтемы которые хороши в той или иной ситуациях: </p>
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/dragon_lance.jpg" style="position: relative; top: 12px;">
+			<p> Dragon Lance - в основном берут для начальных статов, жира и дальности атаки, так будет приятнее пушить и держать расстояние между вами и<br>противником. В дальнейшем можно апгрейднуть до Hurricane Pike.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/manta_style.jpg" style="position: relative; top: 12px;">
+			<p>Manta Style - собирают 1 или 2 предметом, дает скорость передвижения, начальный урон, полезен для пуша и прерывания некоторых дизейблов, доджа<br> станов и т.д. Также, если вам не лень контролить каждую иллюзию, вы можете забайтить противника на важные кнопки.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/shadow_blade.jpg" style="position: relative; top: 12px;">
+			<p>Shadow Blade - довольно универсальный предмет на любого героя, начальный урон, дает возможность приблизиться к врагам и использовать ульт<br> прям под ним(ними), особенно полезен на более низких рейтингах. В дальнейшем можно апрейднуть до Silver Edge.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/monkey_bar.jpg" style="position: relative; top: 4px;">
+			<p>Monkey King bar - зачастую берут против героев с миссами или айтемами с ними. Дают допольнительную скорость атаки что тоже очень полезно.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/shiva_guard.jpg" style="position: relative; top: 4px;">
+			<p>Shiva's Guard - для доп. брони и комбинирования шивы с ультимейтом.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/scythe_of_vyse.jpg" style="position: relative; top: 4px;">
+			<p>Scythe of Vyse - очень полезный предмет, который стоит брать в 70% игр, если у вашей тимы нет нужного контроля, не имеет значения какой билд.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/linkens_sphere.jpg" style="position: relative; top: 12px;">
+			<p>Linken's Sphere - позволяет избежать очень страшных для вас кнопок, таких как Finger of Death, Reaper Scythe, Doom от которых, без линки, ты<br> скорее всего умрешь.</p>	
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/eye_of_skadi.jpg" style="position: relative; top: 12px;">
+			<p>Eye of Skadi - имеет все орб эффекты и полезен против героев, которые имеют высокий хп-реген, против них он особенно полезен, дает плотность и<br> большой запас здоровья, хорошо сочетаеться с Satanic и Sange & Yasha.</p>	
+		</div>
+		<div class="build_sf__text">
+			<h2>Разные сборки</h2>
+			<br>
+		</div>
+		<div class="build_sf_items">
+			<img src="images/content/items/boots_of_travel.jpg" style="margin-left: 5px;"> <img src="images/content/items/butterfly.jpg"> <img src="images/content/items/monkey_bar.jpg"><br>
+			<img src="images/content/items/satanic.jpg" style="margin-left: 5px;"> <img src="images/content/items/daedalus.jpg"> <img src="images/content/items/eye_of_skadi.jpg">
 
+			<br><br><img src="images/content/items/boots_of_travel.jpg" style="margin-left: 5px;"> <img src="images/content/items/eul.jpg"> <img src="images/content/items/blink_dagger.jpg"><br><img src="images/content/items/bkb.jpg" style="margin-left: 5px;"> <img src="images/content/items/scythe_of_vyse.jpg"> <img src="images/content/items/refresher_orb.jpg">
+
+			<br><br><img src="images/content/items/hurricane_pike.jpg" style="margin-left: 5px;"> <img src="images/content/items/sange_and_yasha.jpg"> <img src="images/content/items/satanic.jpg"><br>
+			<img src="images/content/items/power_treads.jpg" style="margin-left: 5px;"> <img src="images/content/items/bkb.jpg"> <img src="images/content/items/butterfly.jpg">
+		</div>
+
+		<div class="build_sf__main-box">
+			<h3 style="right: 485px;">Что делать по игре</h3>
+		</div>	
+		<div class="build_sf__text">
+			<p>Как уже говорилось ранее, задача СФа выфармить нужные айтемы и убивать соло цели. Сначала, фармим на линии и стараемся никуда не выходить до<br> травелов/юлов/шб или хотябы 8-10 уровня, паралельно с линией фармим лес, это нам позволяют койлы. Желательно гангать вражеского кора - это самая приоритетная цель. В тим файтах, заходим за спину и кастуем ульт затем добиваем врагов койлами или с руки, в лейте может влетать в самый центр замеса<br> и с помощью бкб и shadow blade/blink dagger кастовать ульт и добивать койлами( магический ) или с руки ( физический ). Если нету бкб желательно кастовать<br> ульт в кустах или за деревьями, если выпадает редкий случай когда в пике вообще нет станов или все кнопки нажали можно смело влетать во врагов. Всего описать невозможно, это все приходит с опытом, знать как и куда влетать, расстояние койлов, это приходит со временем. Поэтому новичкам будет по началу очень сложно играть на этом герое.</p>
+		</div>
+
+		<div class="build_sf__main-box">
+			<h3 style="right: 570px;">Итог</h3>
+		</div>	
+		<div class="build_sf__text">
+			<p>Герой с очень низким начальным уроном, низким здоровьем, но имеет хорошую скорость атаки и анимацию удара. Мало брони, но большой прирост интелекта, главное оружие - Shadowraze. Shadow Fiend требует понимания игры, знание таймингов, расстояния способностей и тонкостей героя. Герой, который в опытных руках будет уничтожать всех и вся на своем пути. На этом пожалуй всё, удачных игр!</p>
+			<br>
+			<br>
+		</div>
 </section> <!--   build__sf   -->
 
+<footer class="ending-header" id="bottom">
+	<section class="ending-main_box">
+		<h3>Больше информации</h3>
+		<ul>
+			<li>
+				<a href="https://steamcommunity.com/id/kirito_s/myworkshopfiles/?section=guides" 
+				target="_blank">Мои руководства</a>
+			</li>
+			<li>
+				<a href="https://ru.dotabuff.com/heroes/shadow-fiend" 
+				target="_blank">Игры на Shadow Fiend</a>
+			</li>
+
+			<div class="ending-main_line"></div> <!-- white line -->
+
+		</ul>
+
+		<div class="ending-main_social">
+			<h3 id="ending-header_h">В социальных сетях</h3>
+			<a href="https://steamcommunity.com/id/kirito_s/" target="_blank"><img src="images/content/social/steam.ico"></a>
+			<a href="https://www.instagram.com/_1drag0n1_/ " target="_blank"><img src="images/content/social/instagram.ico" style="width: 35px; height: 35px"></a>
+			<a href="https://twitter.com/of_adora" target="_blank"><img src="images/content/social/twitter.ico" style="width: 35px; height: 35px; margin-left: 9px"></a>
+
+			<div class="ending-main_line" style="margin-left: 38px;"></div> <!-- white line -->
+		</div>
+		
+		<div class="ending-main_title">
+			<h3>Right Purchase</h3>
+		</div>
+	</section> 
+</footer>
+<div style="background: #313131;">
+	<p>Copyright © 2021 Kirito</p>
+	<br>
+	<br>
+</div>
 
 </body>
 </html>
+
+
+
+
 
 
 
