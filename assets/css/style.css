@@ -505,8 +505,4 @@ ul {
 
 
 /* Anchors */
-@media all and (min-width: 600px) {
-    /* Мы указываем двум сайдбарам разделить строку */
-  	.container { flex: 1 auto; }
-	html, body { flex: 1 auto; }
-}
+
