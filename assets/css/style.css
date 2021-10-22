@@ -505,3 +505,6 @@ ul {
 
 
 /* Anchors */
+.container > * {
+	flex: 1 100%;
+}
